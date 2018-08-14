@@ -8,8 +8,8 @@ public class Client
         this.operation = operation;
     }
 
-    public void performOperation(){
-
+    public void performOperation(Assigner assigner){
+        assigner.attend(this);
     }
 
     public String getName() {

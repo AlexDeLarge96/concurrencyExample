@@ -8,7 +8,10 @@ public class main
     {
         createClients(5);
         Assigner a=new Assigner();
-        a.attend(clients);
+        for(Client client:clients) {
+            client.performOperation(a);
+        }
+        a.finishAssignerJob();
     }
 
     public static void createClients(int numberClients)
